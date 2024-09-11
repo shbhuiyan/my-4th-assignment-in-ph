@@ -14,7 +14,7 @@ function calculateTax(income, expenses) {
 
 function sendNotification(email) {
 
-    const check = email.includes('@')
+    const check = email.includes('@');
     if(check !== true){
         return "Invalid Email";
     }
@@ -54,7 +54,7 @@ function checkDigitsInName(name) {
 function calculateFinalScore(obj) {
 
     if(typeof obj !== 'object'){
-        return "Invalid Input"
+        return "Invalid Input";
     }
 
     const totalScore = obj.testScore + obj.schoolGrade;
@@ -71,6 +71,7 @@ function calculateFinalScore(obj) {
 
 
 
+
 function  waitingTime(waitingTimes  , serialNumber) {
     
     if(!Array.isArray(waitingTimes) || typeof serialNumber !== 'number'){
@@ -84,7 +85,7 @@ function  waitingTime(waitingTimes  , serialNumber) {
         n++;
     }
     const avg = sum / waitingTimes.length;
-    const average = Math.round(avg)
+    const average = Math.round(avg);
 
     const remainingCandidates = serialNumber - waitingTimes.length;
     const heOrShe = 1;
